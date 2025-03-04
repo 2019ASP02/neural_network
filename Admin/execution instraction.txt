@@ -1,0 +1,7 @@
+it only run in yarn compiler 
+
+start the project
+yarn dev
+
+start python file
+python -m backend:app --reload

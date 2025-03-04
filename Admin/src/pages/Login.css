@@ -1,0 +1,140 @@
+/* Iframe Container */
+
+
+/* Full-page layout */
+.login-page {
+  padding: 1.5rem;
+padding-top: 10rm;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: black;
+}
+.login-title {
+  color: white;
+}
+
+/* Company section */
+.company-section {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.company-logo {
+  width: 200px;
+  height: auto;
+}
+
+.company-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+/* Login container */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; /* Full viewport height */
+  width: 100vw;  /* Full viewport width */
+  
+}
+
+
+
+.login-card {
+  background: gray;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  text-align: center;
+}
+
+
+/* Role selection */
+.role-selection {
+  margin-bottom: 15px;
+}
+
+.role-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.role-btn {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.role-btn.active {
+  background-color: lightgray;
+  color: white;
+  border-color: gray;
+}
+
+/* Input fields */
+.input-field {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  color:black;
+}
+
+/* Login button */
+.login-btn {
+  width: 70%;
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Error message */
+.error-message {
+  color: red;
+  font-size: 14px;
+}
+
+/* Forgot password */
+.forgot-password {
+  margin-top: 8px;
+  color: blue;
+  cursor: pointer;
+}
+
+/* Login button */
+.logout-btn {
+  width: 70px;
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left: 650px;
+}
+
+.logout-btn:hover {
+  background-color: #0056b3;
+}

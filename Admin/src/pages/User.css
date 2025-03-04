@@ -1,0 +1,186 @@
+/* User Page Styles */
+.user-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  color: white;
+}
+
+/* Title Styling */
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Table Styling */
+.vacancies-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: gray;
+  color: white;
+}
+
+.vacancies-table th, .vacancies-table td {
+  border: 1px solid #444;
+  padding: 10px;
+  text-align: left;
+}
+
+.vacancies-table th {
+  background-color: #bab3b3;
+}
+
+.vacancies-table tr:nth-child(even) {
+  background-color: #bab3b3;
+}
+
+.vacancies-table tr:hover {
+  background-color: #333;
+}
+
+/* Apply Form Styling */
+.apply-form {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.apply-form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-size: 16px;
+}
+
+.apply-form input[type="text"],
+.apply-form input[type="email"],
+.apply-form input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background-color: #333;
+  color: white;
+}
+
+.apply-form input::placeholder {
+  color: #888;
+}
+
+/* Submit Button */
+.submit-button {
+  width: 100%;
+  background-color: #1abc9c;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #16a085;
+}
+
+/* Checkbox Styling */
+input[type="checkbox"] {
+  transform: scale(1.2);
+  margin: 5px;
+}
+.loading {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2em;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2em;
+}
+.Modal {
+  position: absolute; /* Or fixed */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the modal */
+  background: gray;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  width: 400px; /* Adjust as needed */
+  max-width: 90%; /* For responsiveness */
+}
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+.apply-form {
+  /* Add any existing styles for your form */
+  display: flex; /* Or grid, if you're using it */
+  flex-direction: column; /* Or whatever layout you have */
+  align-items: center;
+}
+
+.apply-form .cancel-button {
+  align-self: flex-start; /* Align the button to the start of the flex container */
+  /* Or */
+  /* text-align: left; */ /* if the buttons are in a div with text align center */
+  /* Or */
+  /* margin-left: 0; */ /* if there are margins centering the button */
+}
+.cancel-button {
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-items: center;
+}
+.vacancies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 20px;
+  border: 3px solid blue;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.vacancy-box {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.vacancy-box h3 {
+  margin-top: 0;
+}
+
+/* Iframe Container (Top-Right Corner) */
+.iframe-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.iframe-container iframe {
+  width: 300px;
+  height: 500px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,614 @@
+/* Admin Page Styles */
+.admin-container {
+    width: 100%; /* Occupy full width */
+    height: 100%; /* Occupy full height */
+    min-height: 100vh; /* Ensure at least full viewport height */
+    margin: 0; /* Remove default margins */
+    padding: 20px; /* Keep some padding */
+    color: black;
+    box-sizing: border-box; /* Include padding in width/height */
+}
+
+
+/* Title & Subtitle */
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.subtitle {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Post Job Form */
+.post-job-form {
+  background-color: black;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.post-job-form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-size: 16px;
+}
+
+.post-job-form input,
+.post-job-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid white;
+  border-radius: 4px;
+  background-color: #333;
+  color: #444;
+}
+
+.post-job-form textarea {
+  height: 80px;
+}
+
+.submit-button {
+  width: 100%;
+  background-color: #1abc9c;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #16a085;
+}
+
+/* Job Vacancies Table */
+.vacancies-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  color: gray;
+  margin-top: 20px;
+}
+
+.vacancies-table th, .vacancies-table td {
+  border: 1px solid #444;
+  padding: 10px;
+  text-align: left;
+}
+
+.vacancies-table th {
+  background-color: whitesmoke;
+}
+
+.vacancies-table tr:nth-child(even) {
+  background-color: white;
+}
+
+.vacancies-table tr:hover {
+  background-color: #948d8d;
+}
+
+/* Delete Button */
+.delete-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;
+}
+/* Admin.css */
+
+.p-5 {
+  padding: 1.5rem; /* Equivalent to p-6 in Tailwind */
+}
+
+.text-2xl {
+  font-size: 1.5rem; /* Equivalent to text-2xl in Tailwind */
+  line-height: 2rem;
+}
+
+.font-bold {
+  font-weight: 700; /* Equivalent to font-bold in Tailwind */
+}
+
+.mb-4 {
+  margin-bottom: 1rem; /* Equivalent to mb-4 in Tailwind */
+}
+
+.text-xl {
+  font-size: 1.25rem; /* Equivalent to text-xl in Tailwind */
+  line-height: 1.75rem;
+}
+
+.font-semibold {
+  font-weight: 600; /* Equivalent to font-semibold in Tailwind */
+}
+
+.mb-2{
+  margin-bottom: 0.5rem; /* Equivalent to mb-2 in tailwind */
+}
+
+.block {
+  display: block; /* Equivalent to block in Tailwind */
+}
+
+.text-sm {
+  font-size: 0.875rem; /* Equivalent to text-sm in Tailwind */
+  line-height: 1.25rem;
+}
+
+.text-gray-700 {
+  color: #a9aeb7; /* Equivalent to text-gray-700 in Tailwind */
+}
+
+.mt-1 {
+  margin-top: 0.25rem; /* Equivalent to mt-1 in Tailwind */
+}
+
+.w-full {
+  width: 100%; /* Equivalent to w-full in Tailwind */
+}
+
+.border-gray-300 {
+  border-color: #d1d5db; /* Equivalent to border-gray-300 in Tailwind */
+}
+
+.rounded-md {
+  border-radius: 0.375rem; /* Equivalent to rounded-md in Tailwind */
+}
+
+.shadow-sm {
+  box-shadow: 0 1px 2px 0 rgba(132, 128, 128, 0.05); /* Equivalent to shadow-sm in Tailwind */
+}
+
+.focus\:ring-indigo-500:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: #6366f1; /* Equivalent to ring-indigo-500 in Tailwind */
+  --tw-ring-offset-shadow: var(--tw-empty,/*!*/ /*!*/);
+  --tw-ring-shadow: var(--tw-empty,/*!*/ /*!*/);
+  box-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+}
+
+.focus\:border-indigo-500:focus {
+  border-color: #c9cae6; /* Equivalent to border-indigo-500 in Tailwind */
+}
+
+.bg-blue-500 {
+  background-color: #c9cae6; /* Equivalent to bg-blue-500 in Tailwind */
+}
+
+.hover\:bg-blue-700:hover {
+  background-color: #c9cae6; /* Equivalent to hover:bg-blue-700 in Tailwind */
+}
+
+.text-white {
+  color: #fff; /* Equivalent to text-white in Tailwind */
+}
+
+.font-bold {
+  font-weight: 700; /* Equivalent to font-bold in Tailwind */
+}
+
+.py-2 {
+  padding-top: 0.5rem; /* Equivalent to py-2 in Tailwind */
+  padding-bottom: 0.5rem;
+}
+
+.px-4 {
+  padding-left: 1rem; /* Equivalent to px-4 in Tailwind */
+  padding-right: 1rem;
+}
+
+.rounded {
+  border-radius: 0.25rem; /* Equivalent to rounded in Tailwind */
+}
+
+.w-full {
+  width: 100%;
+}
+
+.border {
+  border: 1px solid #e5e7eb; /* Equivalent to border in Tailwind */
+}
+
+.mt-4 {
+  margin-top: 1rem; /* Equivalent to mt-4 in Tailwind */
+}
+
+.bg-gray-200 {
+  background-color: #e5e7eb; /* Equivalent to bg-gray-200 in Tailwind */
+}
+
+.p-2 {
+  padding: 0.5rem; /* Equivalent to p-2 in Tailwind */
+}
+
+.bg-red-500 {
+  background-color: #ef4444; /* Equivalent to bg-red-500 in Tailwind */
+}
+
+.text-blue-500 {
+  color: white; /* Equivalent to text-blue-500 in Tailwind */
+}
+
+.underline {
+  text-decoration-line: underline; /* Equivalent to underline in Tailwind */
+}
+.p-6 {
+  padding: 1.5rem;
+  padding-top: 10rm;
+}
+
+
+/* Tab Menu */
+.tab-menu {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  padding: 80px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  width:100%;
+}
+
+/* Tab Items */
+.tab-item {
+  flex: 1;
+  padding: 12px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  border-bottom: 3px solid transparent;
+  transition: 0.3s;
+}
+
+/* Active Tab */
+.tab-item.active {
+  border-bottom: 3px solid ;
+  color: #0056b3;
+}
+
+/* Hover Effect */
+.tab-item:hover {
+  color: #0056b3;
+}
+
+/* Tab Content */
+.tab-content {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: lightyellow;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+/* Reset styles for a cleaner look */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%; /* All three need 100% height */
+  font-family: 'Arial', sans-serif;
+  background-color: rgb(255, 255, 255); /* Set entire background to white */
+  color: rgb(198, 195, 195); /* Ensure text is readable */
+  /*x-sizing: border-box;  Include padding and border in element's total width and height */
+}
+
+/* Main App container */
+.App {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: #FFF; /* Black background */
+}
+
+/* Sidebar styles */
+.App-sidebar {
+  width: 280px;
+  background-color: #edf6f5; /* Dark sidebar */
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.App-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.App-sidebar ul li {
+  margin: 15px 0;
+}
+
+/* Sidebar navigation links */
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 12px;
+  display: block;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, padding-left 0.2s ease;
+}
+
+.nav-link.active {
+  background-color: #7e7e7e; /* Darker active tab */
+  border-left: 4px solid #1abc9c;
+  padding-left: 16px;
+}
+
+.nav-link:hover {
+  background-color: #FFF; /* Slightly lighter on hover */
+  padding-left: 16px;
+}
+
+/* Main content container */
+.App-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background-color: #FFF; /* Black background */
+}
+
+/* Header styles */
+.App-header {
+  background-color: gray; /* Dark header */
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+/* Main section styling */
+main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff; /* Ensure main background is black */
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #FFF; /* Dark table background */
+  color: rgb(173, 173, 173);
+}
+
+th, td {
+  border: 1px solid #444;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #222; /* Darker for headers */
+}
+
+tr:nth-child(even) {
+  background-color: #1a1a1a; /* Alternating row color */
+}
+
+tr:hover {
+  background-color: #333; /* Hover effect */
+}
+
+/* Button Styles */
+.post-button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.te {
+  color: black;
+}
+
+.m {
+  color: blue;
+}
+
+button:hover {
+  background-color: #16a085;
+}
+
+/* Input Fields */
+input {
+  background-color: white;
+  color: black;
+  border: 1px solid gray;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+input::placeholder {
+  color: #888;
+}
+
+.rank {
+  color: Blue;
+
+}
+
+/* Admin.css */
+.selected-candidates-container {
+  padding: 20px;
+}
+
+.vacancies-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.vacancy-item {
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.vacancy-item button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.admin-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  height: 100%;
+  background: #2c3e50;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.sidebar ul li:hover,
+.sidebar ul li.active {
+  background: #34495e;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  background: #ecf0f1;
+  overflow-y: auto;
+}
+
+.loading {
+  text-align: center;
+  font-size: 18px;
+}
+
+
+
+.tab-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.tabs button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  transition: 0.3s;
+}
+
+.tabs button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.tab-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.job-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.job-form input,
+.job-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.post-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.vacancies-list {
+  width: 100%;
+}
+
+.job-card {
+  background: #f9f9f9;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.delete-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}

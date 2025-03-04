@@ -1,0 +1,148 @@
+/* Reset styles for a cleaner look */
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  background-color: rgb(255, 255, 255); /* Set entire background to black */
+  color: rgb(198, 195, 195); /* Ensure text is readable */
+  width: 100%;
+}
+
+/* Main App container */
+.App {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: #FFF; /* Black background */
+}
+
+/* Sidebar styles */
+.App-sidebar {
+  width: 280px;
+  background-color: #edf6f5; /* Dark sidebar */
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100vh;
+}
+
+.App-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.App-sidebar ul li {
+  margin: 15px 0;
+}
+
+/* Sidebar navigation links */
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 12px;
+  display: block;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, padding-left 0.2s ease;
+}
+
+.nav-link.active {
+  background-color: #7e7e7e; /* Darker active tab */
+  border-left: 4px solid #1abc9c;
+  padding-left: 16px;
+}
+
+.nav-link:hover {
+  background-color: #FFF; /* Slightly lighter on hover */
+  padding-left: 16px;
+}
+
+/* Main content container */
+.App-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background-color: #FFF; /* Black background */
+}
+
+/* Header styles */
+.App-header {
+  background-color: gray; /* Dark header */
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+/* Main section styling */
+main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff; /* Ensure main background is black */
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #FFF; /* Dark table background */
+  color: rgb(173, 173, 173);
+}
+
+th, td {
+  border: 1px solid #444;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #222; /* Darker for headers */
+}
+
+tr:nth-child(even) {
+  background-color: #1a1a1a; /* Alternating row color */
+}
+
+tr:hover {
+  background-color: #333; /* Hover effect */
+}
+
+/* Button Styles */
+button {
+  background-color: #1abc9c;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #16a085;
+}
+
+/* Input Fields */
+input {
+  background-color: #222;
+  color: white;
+  border: 1px solid #444;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+input::placeholder {
+  color: #888;
+}

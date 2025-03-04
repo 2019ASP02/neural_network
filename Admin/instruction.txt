@@ -1,0 +1,3 @@
+cd Admin
+python -m backend --reload 
+uvicorn backend:app --reload
